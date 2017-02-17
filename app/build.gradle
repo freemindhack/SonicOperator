@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.hillsidewatchers.sdu.sonicoperator"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/commons-math-2.2.jar')
+    compile files('libs/jtransforms-2.4.jar')
+    compile files('libs/liblinear-1.94.jar')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+}

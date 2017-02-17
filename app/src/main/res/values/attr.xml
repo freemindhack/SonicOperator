@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderSwitch">
+        <!--按钮底层背景-->
+        <attr name="abackground" format="reference"></attr>
+        <!--上层按钮背景-->
+        <attr name="btn_background" format="reference"></attr>
+        <!--控件的width-->
+        <attr name="awidth" format="dimension"></attr>
+        <!--控件的height-->
+        <attr name="aheight" format="dimension"></attr>
+        <!--控件上可拖动的按钮widht-->
+        <attr name="btn_width" format="dimension"></attr>
+        <!--控件上可拖动的按钮height-->
+        <attr name="btn_height" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding"/>
+    </declare-styleable>
+    <attr name="rightPadding" format="dimension" />
+</resources>

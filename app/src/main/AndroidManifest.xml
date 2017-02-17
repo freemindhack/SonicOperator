@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hillsidewatchers.sdu.sonicoperator">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_new2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.hillsidewatchers.sdu.sonicoperator.main" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewSurface.SettingActivity">
+
+        </activity>
+        <activity android:name=".ViewSurface.InsertTempActivity"></activity>
+
+        <service android:name=".ServiceWork.FloatingService">
+
+        </service>
+        <service android:name="sdu.embedded.SonicCollector.CollectorService">
+
+        </service>
+
+        <receiver android:name=".ViewSurface.Fragment1$FragmentReceiver"></receiver>
+        <receiver android:name=".ViewSurface.SliderSwitch$SliderSwitchReciever">
+
+        </receiver>
+        <receiver android:name=".ServiceWork.DotService$DotServiceReciever">
+
+        </receiver>
+
+        <service android:name=".ServiceWork.DotService">
+
+        </service>
+        <receiver android:name="sdu.embedded.SonicCollector.CollectorService$CollectorServerReceiver">
+
+        </receiver>
+    </application>
+
+</manifest>

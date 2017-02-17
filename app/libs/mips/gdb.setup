@@ -1,0 +1,3 @@
+set solib-search-path /Users/lixingyu/Documents/codes/imaginecup/dolphincore0.0/obj/local/mips
+source /Users/lixingyu/Library/Android/android-ndk-r10e/prebuilt/common/gdb/common.setup
+directory /Users/lixingyu/Library/Android/android-ndk-r10e/platforms/android-21/arch-mips/usr/include /Users/lixingyu/Documents/codes/imaginecup/dolphincore0.0/jni/src/ckfft/android/ckfft/../../../../inc /Users/lixingyu/Documents/codes/imaginecup/dolphincore0.0/jni/src/ckfft/android/ckfft/../../../../src /Users/lixingyu/Library/Android/android-ndk-r10e/sources/android/cpufeatures /Users/lixingyu/Library/Android/android-ndk-r10e/sources/cxx-stl/system/include
